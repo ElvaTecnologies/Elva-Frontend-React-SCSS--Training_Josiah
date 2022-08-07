@@ -1,0 +1,70 @@
+.HeroComponent {
+  height: 100vh;
+  max-height: 600px;
+  display: flex;
+  background-color: hsl(0, 0%, 96%);
+  // background-color: hsl(0, 0%, 100%);
+
+
+  .text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text-div h1,
+  .text-div p,
+  .button-div {
+    color: hsl(220, 16%, 62%);
+    width: 60%;
+    margin: 5px auto;
+  }
+
+  button {
+    margin-top: 20px
+  }
+
+  .text-div {
+    h1 {
+      color: hsl(233, 26%, 24%);
+      font-weight: 400;
+      font-size: 50px;
+    }
+  }
+
+  .text-div {
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 30px
+    }
+  }
+
+  @mixin background($imgPath, $position: -12px -210px, $repeat: no-repeat) {
+    background: {
+      image: url($imgPath);
+      position: $position;
+      repeat: $repeat;
+    }
+  }
+
+  .image-div {
+    @include background('./../../assets/images/bg-intro-desktop.svg');
+    position: relative;
+    // border: solid red 1px;
+
+    img {
+      width: 636px;
+      margin-top: -62px;
+      top: 28px;
+      position: absolute;
+      left: 198px;
+    }
+  }
+
+  div {
+    width: 50%;
+
+  }
+
+}
