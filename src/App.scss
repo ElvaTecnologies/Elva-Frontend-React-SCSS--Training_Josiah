@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&family=Public+Sans:wght@100;200;400;600&display=swap");
+
+.test {
+  color: hsl(233, 26%, 24%);
+  color: hsl(136, 65%, 51%);
+  color: hsl(192, 70%, 51%);
+
+  color: hsl(233, 8%, 62%);
+  color: hsl(220, 16%, 96%);
+  color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 100%);
+}
+
+.App {
+  // border: solid 1px red;
+  overflow: hidden;
+  height: 3000px;
+  font-family: "Oleo Script", cursive;
+  font-family: "Public Sans", sans-serif;
+}
+
+
+.why-us {
+  // border: solid 1px;
+  min-height: 650px;
+  padding: 10px 20px;
+  background-color: hsl(240, 4%, 91%);
+
+  h1 {
+    font-size: 40px;
+    margin: 40px 0;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+  }
+
+  p {
+    color: hsl(220, 16%, 62%);
+    width: 50%;
+    margin: 40px 0;
+    line-height: 30px;
+    font-size: 18px;
+  }
+
+
+  display: flex;
+
+  .box-flex {
+    width: 90%;
+    // border: solid 1px red;
+    margin: 0 auto;
+  }
+
+  .card-flex {
+    // border: solid;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .card {
+      // border: solid 1px red;
+      width: 300px;
+
+      h1 {
+        font-size: 35px;
+        margin: 30px 0px;
+      }
+
+      p {
+        line-height: 30px;
+        // border: solid;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.articles {
+  background-color: hsl(0, 0%, 96%);
+  height: 500px;
+  display: flex;
+
+  .box-flex {
+    width: 90%;
+    // border: solid 1px red;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding: 40px 0;
+  }
+
+  .article-flex {
+    display: flex;
+
+    .article-box {
+      // border: solid 1px;
+      width: 550px;
+
+      img {
+        width: 100%;
+        border-radius: 25px 25px 0 0;
+      }
+
+      span {
+        margin: 15px 0 0 0;
+        display: block;
+      }
+
+      h1 {
+        font-size: 30px;
+        // border: solid;
+        padding: 10px 0;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
+}
