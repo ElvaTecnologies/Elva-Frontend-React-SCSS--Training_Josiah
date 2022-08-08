@@ -74,6 +74,7 @@
     display: flex;
   }
 
+  // screen 1024
   @media (max-width: 1024px) {
     * {
       // color: red !important;
@@ -87,8 +88,7 @@
 
     .image-div,
     .text-div {
-      width: 50%;
-      border: solid 1px;
+      // border: solid 1px;
       min-width: 60px;
     }
 
@@ -102,8 +102,45 @@
       background-size: 1240px;
 
       img {
-        width: 590px;
+        width: 600px;
         left: 110px;
+      }
+    }
+  }
+
+  // screen 768
+  @media (max-width: 768px) {
+
+    .text-div {
+      padding: 0 20px;
+
+      h1,
+      p,
+      .button-div {
+        width: 100%;
+        margin: 0 10px;
+      }
+
+      h1 {
+        font-size: 40px;
+        margin: 10px 0;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+
+    .image-div {
+      background: url('./../../assets/images/bg-intro-desktop.svg');
+      background-size: 940px;
+      background-position: -48px -100px;
+      background-repeat: no-repeat;
+
+      img {
+        width: 570px;
+        left: 39px;
       }
     }
   }
