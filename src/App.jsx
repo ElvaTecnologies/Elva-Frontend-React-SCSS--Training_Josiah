@@ -80,18 +80,61 @@ function App() {
             <div className="article-flex">
               <div className="article-box">
                 <img src={articleImage} alt="" />
-                <span>By Claire Robinson</span>
-                <h1> Receive money in any currency with no fees</h1>
-                <p>
-                  {" "}
-                  The world is getting smaller and we’re becoming more mobile.
-                  So why should you be forced to only receive money in a single
-                  …
-                </p>
+                <div className="text-div">
+                  <span>By Claire Robinson</span>
+                  <h1> Receive money in any currency with no fees</h1>
+                  <p>
+                    {" "}
+                    The world is getting smaller and we’re becoming more mobile.
+                    So why should you be forced to only receive money in a
+                    single …
+                  </p>
+                </div>
+              </div>
+              <div className="article-box">
+                <img src={articleImage} alt="" />
+                <div className="text-div">
+                  <span>By Claire Robinson</span>
+                  <h1> Receive money in any currency with no fees</h1>
+                  <p>
+                    {" "}
+                    The world is getting smaller and we’re becoming more mobile.
+                    So why should you be forced to only receive money in a
+                    single …
+                  </p>
+                </div>
+              </div>
+              <div className="article-box">
+                <img src={articleImage} alt="" />
+                <div className="text-div">
+                  <span>By Claire Robinson</span>
+                  <h1> Receive money in any currency with no fees</h1>
+                  <p>
+                    {" "}
+                    The world is getting smaller and we’re becoming more mobile.
+                    So why should you be forced to only receive money in a
+                    single …
+                  </p>
+                </div>
+              </div>
+              <div className="article-box">
+                <img src={articleImage} alt="" />
+                <div className="text-div">
+                  <span>By Claire Robinson</span>
+                  <h1> Receive money in any currency with no fees</h1>
+                  <p>
+                    {" "}
+                    The world is getting smaller and we’re becoming more mobile.
+                    So why should you be forced to only receive money in a
+                    single …
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
+
+        <footer></footer>
       </div>
     </>
   );
