@@ -40,7 +40,7 @@
     }
   }
 
-  @mixin background($imgPath, $position: -12px -210px, $repeat: no-repeat) {
+  @mixin background($imgPath, $position: -30px -210px, $repeat: no-repeat) {
     background: {
       image: url($imgPath);
       position: $position;
@@ -58,13 +58,54 @@
       margin-top: -62px;
       top: 28px;
       position: absolute;
-      left: 198px;
+      left: 160px;
     }
   }
 
-  div {
+  .image-div,
+  .text-div {
     width: 50%;
+    // border: solid 1px;
+    min-width: 720px;
+  }
 
+  .flex-box {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  @media (max-width: 1024px) {
+    * {
+      // color: red !important;
+    }
+
+    .text-div h1,
+    .text-div p,
+    .button-div {
+      width: 80%;
+    }
+
+    .image-div,
+    .text-div {
+      width: 50%;
+      border: solid 1px;
+      min-width: 60px;
+    }
+
+    @mixin background($position: -30px -190px, ) {
+      background: {
+        position: $position;
+      }
+    }
+
+    .image-div {
+      background-size: 1240px;
+
+      img {
+        width: 590px;
+        left: 110px;
+      }
+    }
   }
 
 }
