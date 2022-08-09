@@ -4,7 +4,7 @@ import "./navComponent.scss";
 import { FaBars, FaXbox } from "react-icons/fa";
 
 function NavBarComponent() {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="NavBarComponent">
       <div className="logo">
