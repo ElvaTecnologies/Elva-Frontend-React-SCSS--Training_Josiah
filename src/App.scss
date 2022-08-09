@@ -12,7 +12,7 @@
 }
 
 .App {
-  // border: solid 1px red;
+  border: solid 1px darkgoldenrod;
   overflow: hidden;
   // height: 3500px;
   font-family: "Oleo Script", cursive;
@@ -58,7 +58,7 @@
 
     .card {
       // border: solid 1px red;
-      width: 300px;
+      width: 250px;
 
       h1 {
         font-size: 35px;
@@ -76,10 +76,10 @@
 
 .articles {
   background-color: hsl(0, 0%, 96%);
-  min-height: 750px;
+  min-height: 550px;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 
 
   .box-flex {
@@ -91,7 +91,7 @@
 
   h1 {
     font-size: 40px;
-    padding: 40px 0;
+    padding: 20px 0;
     font-weight: 400;
     color: hsl(233, 26%, 24%);
   }
@@ -103,41 +103,44 @@
     justify-content: space-around;
     // border: solid red 1px;
     flex-wrap: wrap;
-    margin: 0 10px;
+    // margin: 0 10px;
 
     .article-box {
       // min-width: 350px;
-      border-radius: 20px;
-      width: 400px;
+      border-radius: 5px;
+      width: 250px;
       overflow: hidden;
       margin: 10px 0;
 
       img {
         width: 100%;
+        // border: solid 1px;
+        margin: 0;
         // border-radius: 25px 25px 0 0;
       }
 
 
+      background-color: #fff;
+
       .text-div {
         // border: solid green 2px;
-        padding: 15px 20px 30px;
+        padding: 10px 10px 20px;
         // background-color: red;
         // color: red;
-        background-color: #fff;
 
 
         span {
-          margin: 15px 0 0 0;
+          margin: 5px 0 0 0;
           display: block;
-          font-size: 15px;
+          font-size: 10px;
           color: hsl(220, 16%, 62%);
 
         }
 
         h1 {
-          font-size: 30px;
+          font-size: 20px;
           // border: solid;
-          padding: 10px 0;
+          padding: 5px 0;
           font-weight: 400;
           // line-height: 25px;
           color: hsl(233, 26%, 24%);
@@ -145,8 +148,8 @@
 
         p {
           color: hsl(220, 16%, 62%);
-          font-size: 18px;
-          line-height: 30px;
+          font-size: 15px;
+          line-height: 21px;
         }
 
       }
