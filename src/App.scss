@@ -110,6 +110,37 @@
     }
 
   }
+
+  @media (max-width: 768px) {
+    h1 {
+      margin: 20px 0;
+    }
+
+    p {
+      margin: 25px 0;
+      font-size: 15px;
+      line-height: 25px;
+      width: 80%;
+    }
+
+    .box-flex {
+      .card-flex {
+
+        .card {
+          h1 {
+            margin: 20px 0px;
+          }
+
+          p {
+            line-height: 18px;
+            // border: solid;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+  }
 }
 
 .articles {
