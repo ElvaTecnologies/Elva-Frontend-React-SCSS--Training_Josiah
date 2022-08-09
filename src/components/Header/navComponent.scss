@@ -1,7 +1,6 @@
 .NavBarComponent {
   font-family: 'Oleo Script', cursive;
   font-family: 'Public Sans', sans-serif;
-  // border: solid 1px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -9,50 +8,41 @@
   align-items: center;
   background-color: #fff;
 
-  .logo {
-    color: red
-  }
 
   ul {
     display: flex;
     margin: auto 0;
     list-style-type: none;
+
+    li {
+      margin: 0 10px;
+    }
   }
 
-  li {
-    margin: 0 10px
-  }
 
   .mobile-menu-button {
     display: none;
     user-select: none;
+
   }
 
-  .mobile-menu-button:focus {
+  :focus {
     outline: none;
   }
 
   @media (max-width: 768px) {
-    * {
-      // color: red !important;
-    }
-
-
 
     ul {
       font-size: 15px;
 
       li {
-        // border: solid 1px;
         margin: 0 5px;
       }
     }
   }
 
   @media (max-width: 650px) {
-    * {
-      // color: red !important;
-    }
+
 
     .mobile-menu-button {
       display: flex;
@@ -79,7 +69,6 @@
       font-size: 15px;
       display: flex;
       visibility: hidden;
-      // transition: visibility ease-in-out .5s;
       padding: 0;
       border-radius: 5px;
       position: absolute;
@@ -92,7 +81,6 @@
       padding: 20px 0;
 
       li {
-        // border: solid 1px;
         cursor: pointer;
         color: hsl(233, 26%, 24%);
         font-weight: 700;
