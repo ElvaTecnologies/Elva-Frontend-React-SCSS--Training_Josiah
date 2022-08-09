@@ -5,6 +5,7 @@ import "./sass/sass-style";
 import HeroComponent from "./components/Hero/Hero";
 import cardImage from "./assets/images/icon-onboarding.svg";
 import articleImage from "./assets/images/image-currency.jpg";
+import FooterComponent from "./components/footer/FooterComponent";
 function App() {
   return (
     <>
@@ -134,7 +135,7 @@ function App() {
           </div>
         </section>
 
-        <footer></footer>
+        <FooterComponent />
       </div>
     </>
   );
