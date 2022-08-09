@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.scss";
 import NavBarComponent from "./components/Header/NavBar";
-import "./sass/sass-style";
 import HeroComponent from "./components/Hero/Hero";
 import cardImage from "./assets/images/icon-onboarding.svg";
 import articleImage from "./assets/images/image-currency.jpg";
