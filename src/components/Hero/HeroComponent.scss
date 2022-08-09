@@ -77,9 +77,6 @@
 
   // screen 1024
   @media (max-width: 1024px) {
-    * {
-      // color: red !important;
-    }
 
     .text-div h1,
     .text-div p,
@@ -153,12 +150,7 @@
   .HeroComponent {
     flex-direction: column;
     max-height: none;
-    height: 780px;
-    // border: solid;
-
-    * {
-      // color: red !important;
-    }
+    height: 830px;
 
     .flex-box {
       flex-wrap: wrap;
@@ -187,7 +179,7 @@
       }
 
       .text-div {
-        width: 85%;
+        width: 100%;
         margin: 0 auto;
         // max-width: 366px;
         text-align: center;

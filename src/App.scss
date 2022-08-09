@@ -154,7 +154,7 @@ button.fancy {
 
     @media (max-width: 425px) {
       text-align: center;
-      padding: 10px;
+      padding: 80px 10px;
 
       p {
         width: 100%;
@@ -182,7 +182,7 @@ button.fancy {
   min-height: 550px;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 20px;
+  padding: 80px 0;
 
 
   .box-flex {
