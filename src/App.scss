@@ -140,6 +140,28 @@
       }
     }
 
+    @media (max-width: 425px) {
+      text-align: center;
+      padding: 10px;
+
+      p {
+        width: 100%;
+      }
+
+      .box-flex {
+        .card-flex {
+          width: 100%;
+          // border: solid;
+
+          p {
+            line-height: 25px;
+            // border: solid;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
   }
 }
 
@@ -221,6 +243,23 @@
           line-height: 21px;
         }
 
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .article-flex {
+      .article-box {
+        width: 100%;
+
+        h1 {
+          text-align: start;
+        }
       }
     }
   }
