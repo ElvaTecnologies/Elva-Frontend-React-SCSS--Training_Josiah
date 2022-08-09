@@ -3,7 +3,6 @@
   max-height: 600px;
   display: flex;
   background-color: hsl(0, 0%, 96%);
-  // background-color: hsl(0, 0%, 100%);
 
 
   .text-div {
@@ -52,7 +51,6 @@
   .image-div {
     @include background('./../../assets/images/bg-intro-desktop.svg');
     position: relative;
-    // border: solid red 1px;
 
     img {
       width: 636px;
@@ -66,7 +64,6 @@
   .image-div,
   .text-div {
     width: 50%;
-    // border: solid 1px;
     min-width: 720px;
   }
 
@@ -86,7 +83,6 @@
 
     .image-div,
     .text-div {
-      // border: solid 1px;
       min-width: 60px;
     }
 
@@ -144,10 +140,9 @@
   }
 
 
-}
 
-@media (max-width: 425px) {
-  .HeroComponent {
+
+  @media (max-width: 425px) {
     flex-direction: column;
     max-height: none;
     height: 830px;
@@ -164,38 +159,31 @@
         background-repeat: no-repeat;
         height: 420px;
         width: 100%;
-        // border: solid;
         margin-top: 50px;
         padding: 0;
 
         img {
-          // position: static;
           width: 100%;
           left: 0;
           top: -20px;
-          // border: solid red 1px;
-          // display: none;
         }
       }
 
       .text-div {
         width: 100%;
         margin: 0 auto;
-        // max-width: 366px;
         text-align: center;
         height: 300px;
 
-        // border: solid 1px red;
         p {
           margin: 0;
         }
       }
     }
   }
-}
 
-@media (max-width: 320px) {
-  .HeroComponent {
+
+  @media (max-width: 320px) {
     height: 690px;
     margin: 0;
 
