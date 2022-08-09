@@ -12,12 +12,15 @@
     justify-content: center;
   }
 
-  .text-div h1,
-  .text-div p,
-  .button-div {
-    color: hsl(220, 16%, 62%);
-    width: 60%;
-    margin: 5px auto;
+  .text-div {
+
+    h1,
+    p,
+    .button-div {
+      color: hsl(220, 16%, 62%);
+      width: 60%;
+      margin: 5px auto;
+    }
   }
 
   button {
@@ -30,9 +33,7 @@
       font-weight: 400;
       font-size: 50px;
     }
-  }
 
-  .text-div {
     p {
       font-size: 18px;
       line-height: 30px;
@@ -191,7 +192,36 @@
         // max-width: 366px;
         text-align: center;
         height: 300px;
+
         // border: solid 1px red;
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .HeroComponent {
+    height: 690px;
+    margin: 0;
+
+    .flex-box {
+      .image-div {
+        background-size: 320px;
+        height: 320px;
+      }
+
+      .text-div {
+        h1 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 15px;
+          margin: 0;
+        }
       }
     }
   }
