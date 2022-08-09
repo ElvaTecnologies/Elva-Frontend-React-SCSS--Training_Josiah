@@ -3,6 +3,9 @@ import logoImage from "../../assets/images/logo.svg";
 import "./navComponent.scss";
 import { FaBars, FaXbox } from "react-icons/fa";
 
+import menuBar from "../../assets/images/icon-hamburger.svg";
+import menuClose from "../../assets/images/icon-close.svg";
+
 function NavBarComponent() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
@@ -24,9 +27,11 @@ function NavBarComponent() {
           setMenuOpen(!menuOpen);
         }}
       >
-        {menuOpen ? "x" : <FaBars />}
-        {/* <FaBars /> */}
-        {/* <FaXbox /> */}
+        {menuOpen ? (
+          <img src={menuClose} alt="" />
+        ) : (
+          <img src={menuBar} alt="" />
+        )}
       </button>
     </div>
   );
