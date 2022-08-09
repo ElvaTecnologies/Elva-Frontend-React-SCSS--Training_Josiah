@@ -11,6 +11,18 @@
   color: hsl(0, 0%, 100%);
 }
 
+button.fancy {
+  $right: hsl(136, 65%, 51%);
+  $left: hsl(192, 70%, 51%);
+  border: none;
+  border-radius: 30px;
+  height: 50px;
+  width: 150px;
+  background: linear-gradient(to right, $right 0%, $left 100%);
+  font-weight: 900;
+  color: #fff
+}
+
 .App {
   // border: solid 1px darkgoldenrod;
   overflow: hidden;
