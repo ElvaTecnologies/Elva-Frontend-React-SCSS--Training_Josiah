@@ -25,6 +25,11 @@
 
   .mobile-menu-button {
     display: none;
+    user-select: none;
+  }
+
+  .mobile-menu-button:focus {
+    outline: none;
   }
 
   @media (max-width: 768px) {
