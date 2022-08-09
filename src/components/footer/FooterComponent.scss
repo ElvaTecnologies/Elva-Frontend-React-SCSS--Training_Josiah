@@ -1,0 +1,52 @@
+footer {
+  background-color: hsl(233, 26%, 24%);
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+
+  div {
+    width: 300px;
+    // border: solid 1px;
+  }
+
+  .icons {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+
+    li {
+      margin: 0 5px;
+    }
+  }
+
+  .nav {
+    display: flex;
+    color: hsl(220, 16%, 96%);
+
+    ul {
+      list-style: none;
+
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
+
+  .btn-div {
+    display: flex;
+    flex-direction: column;
+    color: hsl(233, 8%, 62%);
+    font-size: 15px;
+    align-items: flex-end;
+    // border: solid;
+
+    button {
+      margin-bottom: 10px;
+      // margin-left: auto;
+    }
+  }
+}
