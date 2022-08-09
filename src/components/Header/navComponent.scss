@@ -1,0 +1,82 @@
+.NavBarComponent {
+  .mobile-menu-button {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    * {
+      // color: red !important;
+    }
+
+
+
+    ul {
+      font-size: 15px;
+
+      li {
+        // border: solid 1px;
+        margin: 0 5px;
+      }
+    }
+  }
+
+  @media (max-width: 650px) {
+    * {
+      // color: red !important;
+    }
+
+    .mobile-menu-button {
+      display: flex;
+      height: 40px;
+      width: 40px;
+      border: none;
+
+      background-color: transparent;
+      font-size: 20px;
+      justify-content: center;
+      align-items: center;
+
+      margin: 0;
+      padding: 0;
+
+
+    }
+
+    button.fancy {
+      display: none;
+    }
+
+    ul {
+      font-size: 15px;
+      display: flex;
+      visibility: hidden;
+      // transition: visibility ease-in-out .5s;
+      padding: 0;
+      border-radius: 5px;
+      position: absolute;
+      flex-direction: column;
+      top: 90px;
+      background-color: #fff;
+      width: 70%;
+      min-width: 250px;
+      justify-content: center;
+      padding: 20px 0;
+
+      li {
+        // border: solid 1px;
+        cursor: pointer;
+        color: hsl(233, 26%, 24%);
+        font-weight: 700;
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        margin: 10px auto;
+
+      }
+
+      :hover {
+        color: rgb(146, 146, 146);
+      }
+    }
+  }
+}
