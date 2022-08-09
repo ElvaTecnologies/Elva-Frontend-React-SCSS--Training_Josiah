@@ -145,4 +145,54 @@
     }
   }
 
+
+}
+
+@media (max-width: 425px) {
+  .HeroComponent {
+    flex-direction: column;
+    max-height: none;
+    height: 780px;
+    // border: solid;
+
+    * {
+      // color: red !important;
+    }
+
+    .flex-box {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      margin: 0;
+
+      .image-div {
+        background: url('./../../assets/images/bg-intro-mobile.svg');
+        background-size: 416px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        height: 420px;
+        width: 100%;
+        // border: solid;
+        margin-top: 50px;
+        padding: 0;
+
+        img {
+          // position: static;
+          width: 100%;
+          left: 0;
+          top: -20px;
+          // border: solid red 1px;
+          // display: none;
+        }
+      }
+
+      .text-div {
+        width: 85%;
+        margin: 0 auto;
+        // max-width: 366px;
+        text-align: center;
+        height: 300px;
+        // border: solid 1px red;
+      }
+    }
+  }
 }
