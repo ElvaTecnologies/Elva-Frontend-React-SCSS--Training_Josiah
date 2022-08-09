@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import logoImage from "../../assets/images/logo.svg";
 import "./navComponent.scss";
-import { FaBars, FaXbox } from "react-icons/fa";
 
 import menuBar from "../../assets/images/icon-hamburger.svg";
 import menuClose from "../../assets/images/icon-close.svg";
