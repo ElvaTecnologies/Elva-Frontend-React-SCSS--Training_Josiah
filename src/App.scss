@@ -146,34 +146,41 @@ button.fancy {
           p {
             line-height: 18px;
             // border: solid;
-            margin: 0;
+            // margin: 0;
           }
         }
       }
     }
 
-    @media (max-width: 425px) {
-      text-align: center;
-      padding: 80px 10px;
 
-      p {
+  }
+
+  @media (max-width: 425px) {
+    text-align: center;
+    padding: 80px 10px;
+    display: flex;
+
+    p {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .box-flex {
+      .card-flex {
         width: 100%;
-      }
 
-      .box-flex {
-        .card-flex {
+        .card {
           width: 100%;
-          // border: solid;
+        }
 
-          p {
-            line-height: 25px;
-            // border: solid;
-            font-size: 14px;
-          }
+        p {
+          line-height: 25px;
+          // border: solid;
+          font-size: 14px;
         }
       }
     }
-
   }
 }
 
