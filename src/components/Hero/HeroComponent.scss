@@ -1,0 +1,208 @@
+.HeroComponent {
+  height: 100vh;
+  max-height: 600px;
+  display: flex;
+  background-color: hsl(0, 0%, 96%);
+
+
+  .text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text-div {
+
+    h1,
+    p,
+    .button-div {
+      color: hsl(220, 16%, 62%);
+      width: 60%;
+      margin: 5px auto;
+    }
+  }
+
+  button {
+    margin-top: 20px
+  }
+
+  .text-div {
+    h1 {
+      color: hsl(233, 26%, 24%);
+      font-weight: 400;
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 30px
+    }
+  }
+
+  @mixin background($imgPath, $position: -30px -210px, $repeat: no-repeat) {
+    background: {
+      image: url($imgPath);
+      position: $position;
+      repeat: $repeat;
+    }
+  }
+
+  .image-div {
+    @include background('./../../assets/images/bg-intro-desktop.svg');
+    position: relative;
+
+    img {
+      width: 636px;
+      margin-top: -62px;
+      top: 28px;
+      position: absolute;
+      left: 160px;
+    }
+  }
+
+  .image-div,
+  .text-div {
+    width: 50%;
+    min-width: 720px;
+  }
+
+  .flex-box {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  // screen 1024
+  @media (max-width: 1024px) {
+
+    .text-div h1,
+    .text-div p,
+    .button-div {
+      width: 80%;
+    }
+
+    .image-div,
+    .text-div {
+      min-width: 60px;
+    }
+
+    @mixin background($position: -30px -190px, ) {
+      background: {
+        position: $position;
+      }
+    }
+
+    .image-div {
+      background-size: 1240px;
+
+      img {
+        width: 600px;
+        left: 110px;
+      }
+    }
+  }
+
+  // screen 768
+  @media (max-width: 768px) {
+
+    .text-div {
+      padding: 0 20px;
+
+      h1,
+      p,
+      .button-div {
+        width: 100%;
+        margin: 0 10px;
+      }
+
+      h1 {
+        font-size: 40px;
+        margin: 10px 0;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+
+    .image-div {
+      background: url('./../../assets/images/bg-intro-desktop.svg');
+      background-size: 940px;
+      background-position: -48px -100px;
+      background-repeat: no-repeat;
+
+      img {
+        width: 570px;
+        left: 39px;
+      }
+    }
+  }
+
+
+
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    max-height: none;
+    height: 830px;
+
+    .flex-box {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      margin: 0;
+
+      .image-div {
+        background: url('./../../assets/images/bg-intro-mobile.svg');
+        background-size: 416px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        height: 420px;
+        width: 100%;
+        margin-top: 50px;
+        padding: 0;
+
+        img {
+          width: 100%;
+          left: 0;
+          top: -20px;
+        }
+      }
+
+      .text-div {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        height: 300px;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 320px) {
+    height: 690px;
+    margin: 0;
+
+    .flex-box {
+      .image-div {
+        background-size: 320px;
+        height: 320px;
+      }
+
+      .text-div {
+        h1 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 15px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

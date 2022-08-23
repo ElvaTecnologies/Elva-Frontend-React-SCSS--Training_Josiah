@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&family=Public+Sans:wght@100;200;400;600&display=swap");
+
+.test {
+  color: hsl(233, 26%, 24%);
+  color: hsl(136, 65%, 51%);
+  color: hsl(192, 70%, 51%);
+
+  color: hsl(233, 8%, 62%);
+  color: hsl(220, 16%, 96%);
+  color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 100%);
+}
+
+button.fancy {
+  $right: hsl(136, 65%, 51%);
+  $left: hsl(192, 70%, 51%);
+  border: none;
+  border-radius: 30px;
+  height: 50px;
+  width: 150px;
+  background: linear-gradient(to right, $right 0%, $left 100%);
+  font-weight: 900;
+  color: #fff
+}
+
+.App {
+  // border: solid 1px darkgoldenrod;
+  overflow: hidden;
+  // height: 3500px;
+  font-family: "Oleo Script", cursive;
+  font-family: "Public Sans", sans-serif;
+}
+
+
+.why-us {
+  // border: solid 1px;
+  min-height: 650px;
+  padding: 10px 20px;
+  background-color: hsl(240, 4%, 91%);
+
+  h1 {
+    font-size: 40px;
+    margin: 40px 0;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+  }
+
+  p {
+    color: hsl(220, 16%, 62%);
+    width: 50%;
+    margin: 40px 0;
+    line-height: 30px;
+    font-size: 18px;
+  }
+
+
+  display: flex;
+
+  .box-flex {
+    width: 90%;
+    // border: solid 1px red;
+    margin: 0 auto;
+  }
+
+  .card-flex {
+    // border: solid;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .card {
+      // border: solid 1px red;
+      width: 250px;
+
+      h1 {
+        font-size: 35px;
+        margin: 30px 0px;
+      }
+
+      p {
+        line-height: 30px;
+        // border: solid;
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 35px;
+      margin: 30px 0;
+    }
+
+    p {
+      margin: 30px 0;
+      font-size: 16px;
+    }
+
+    .box-flex {
+      width: 99%;
+
+      .card-flex {
+
+        .card {
+          // border: solid 1px red;
+          width: 200px;
+          padding: 5px;
+          margin: 10px 0;
+
+          h1 {
+            font-size: 25px;
+            margin: 30px 0px;
+          }
+
+          p {
+            line-height: 20px;
+            // border: solid;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      margin: 20px 0;
+    }
+
+    p {
+      margin: 25px 0;
+      font-size: 15px;
+      line-height: 25px;
+      width: 80%;
+    }
+
+    .box-flex {
+      .card-flex {
+
+        .card {
+          h1 {
+            margin: 20px 0px;
+          }
+
+          p {
+            line-height: 18px;
+            // border: solid;
+            // margin: 0;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  @media (max-width: 425px) {
+    text-align: center;
+    padding: 80px 10px;
+    display: flex;
+
+    p {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .box-flex {
+      .card-flex {
+        width: 100%;
+
+        .card {
+          width: 100%;
+        }
+
+        p {
+          line-height: 25px;
+          // border: solid;
+          line-height: 25px !important;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.articles {
+  background-color: hsl(0, 0%, 96%);
+  min-height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 0;
+
+
+  .box-flex {
+    width: 90%;
+    // max-width: 2000px;
+    // border: solid 1px red;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding: 20px 0;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+  }
+
+  // border: solid 1px;
+
+  .article-flex {
+    display: flex;
+    justify-content: space-around;
+    // border: solid red 1px;
+    flex-wrap: wrap;
+    // margin: 0 10px;
+
+    .article-box {
+      // min-width: 350px;
+      border-radius: 5px;
+      width: 250px;
+      overflow: hidden;
+      margin: 10px 0;
+
+      img {
+        width: 100%;
+        // border: solid 1px;
+        margin: 0;
+        // border-radius: 25px 25px 0 0;
+      }
+
+
+      background-color: #fff;
+
+      .text-div {
+        // border: solid green 2px;
+        padding: 10px 10px 20px;
+        // background-color: red;
+        // color: red;
+
+
+        span {
+          margin: 5px 0 0 0;
+          display: block;
+          font-size: 10px;
+          color: hsl(220, 16%, 62%);
+
+        }
+
+        h1 {
+          font-size: 20px;
+          // border: solid;
+          padding: 5px 0;
+          font-weight: 400;
+          // line-height: 25px;
+          color: hsl(233, 26%, 24%);
+        }
+
+        p {
+          color: hsl(220, 16%, 62%);
+          font-size: 15px;
+          line-height: 21px;
+        }
+
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .article-flex {
+      .article-box {
+        width: 100%;
+
+        h1 {
+          text-align: start;
+        }
+      }
+    }
+  }
+}

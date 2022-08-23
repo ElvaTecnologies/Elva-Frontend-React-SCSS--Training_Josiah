@@ -1,0 +1,99 @@
+.NavBarComponent {
+  font-family: 'Oleo Script', cursive;
+  font-family: 'Public Sans', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  align-items: center;
+  background-color: #fff;
+
+
+  ul {
+    display: flex;
+    margin: auto 0;
+    list-style-type: none;
+
+    li {
+      margin: 0 10px;
+    }
+  }
+
+
+  .mobile-menu-button {
+    display: none;
+    user-select: none;
+
+  }
+
+  :focus {
+    outline: none;
+  }
+
+  @media (max-width: 768px) {
+
+    ul {
+      font-size: 15px;
+
+      li {
+        margin: 0 5px;
+      }
+    }
+  }
+
+  @media (max-width: 650px) {
+
+
+    .mobile-menu-button {
+      display: flex;
+      height: 40px;
+      width: 40px;
+      border: none;
+
+      background-color: transparent;
+      font-size: 20px;
+      justify-content: center;
+      align-items: center;
+
+      margin: 0;
+      padding: 0;
+
+
+    }
+
+    button.fancy {
+      display: none;
+    }
+
+    ul {
+      font-size: 15px;
+      display: flex;
+      visibility: hidden;
+      padding: 0;
+      border-radius: 5px;
+      position: absolute;
+      flex-direction: column;
+      top: 90px;
+      background-color: #fff;
+      width: 70%;
+      min-width: 250px;
+      justify-content: center;
+      padding: 20px 0;
+
+      li {
+        cursor: pointer;
+        color: hsl(233, 26%, 24%);
+        font-weight: 700;
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        margin: 10px auto;
+
+      }
+
+      :hover {
+        color: rgb(146, 146, 146);
+      }
+    }
+  }
+}
